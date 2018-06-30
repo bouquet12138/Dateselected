@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="DatePickerView">
+
+        <attr name="data1Color" format="color"/>
+        <attr name="data2Color" format="color"/>
+        <attr name="canScroll" format="boolean"/>
+
+    </declare-styleable>
+
+</resources>

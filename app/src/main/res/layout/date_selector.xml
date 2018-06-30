@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--顶部标题-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#fff">
+
+        <TextView
+            android:id="@+id/cancelText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:padding="10dp"
+            android:text="取消"
+            android:textColor="#dda4e4"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/currentDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="请选择时间"
+            android:textColor="#dda4e4"
+            android:textSize="20sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/confirmText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:padding="10dp"
+            android:text="完成"
+            android:textColor="#dda4e4"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <!--那根线-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eee" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingRight="20dp"
+        android:paddingTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            android:layout_weight="4.4">
+
+            <com.example.datechioce.custom_view.DatePickerView
+                android:id="@+id/yearDatePicker"
+                android:layout_width="match_parent"
+                android:layout_height="160dp">
+
+            </com.example.datechioce.custom_view.DatePickerView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="年"
+                android:textColor="#555"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <!--月布局-->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            android:layout_weight="3">
+
+            <com.example.datechioce.custom_view.DatePickerView
+                android:id="@+id/monthDatePicker"
+                android:layout_width="match_parent"
+                android:layout_height="160dp">
+
+            </com.example.datechioce.custom_view.DatePickerView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="月"
+                android:textColor="#555"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <!--日布局-->
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            android:layout_weight="3">
+
+            <com.example.datechioce.custom_view.DatePickerView
+                android:id="@+id/dayDatePicker"
+                android:layout_width="match_parent"
+                android:layout_height="160dp">
+
+            </com.example.datechioce.custom_view.DatePickerView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="日"
+                android:textColor="#555"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
