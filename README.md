@@ -15,4 +15,10 @@ DatePickerView 属性介绍
      * canScroll  是否可以滚动     默认可以滚动
 	 <br>
 	 
-	 好了就这样了
+BottomPopDateSelect 介绍
+--------------
+	BottomPopDateSelect 其实就是3个 DatePickerView 加底部弹窗的组合 具体大家可以自行设置
+	bottomPopDateSelect.setOnConfirmListener(new OnConfirmListener()) 
+	//上面的可以设置完成按钮的点击监听 会将日期以 2017-07-23的形式返回出去
+	//具体看代码吧
+	

@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.datechioce.custom_view.BottomPopDateSelect;
 import com.example.datechioce.custom_view.DatePickerView;
@@ -39,6 +40,10 @@ public class MainActivity extends AppCompatActivity {
     private void initListener() {
         mAppearBt.setOnClickListener((view) -> {
             mBottomPopDateSelect.show();//展示一下
+        });
+        mBottomPopDateSelect.setOnConfirmListener((currentDate) -> {
+            Toast.makeText(this, currentDate, Toast.LENGTH_SHORT).show();
+            mBottomPopDateSelect.dismiss();//弹窗消失
         });
     }
 
