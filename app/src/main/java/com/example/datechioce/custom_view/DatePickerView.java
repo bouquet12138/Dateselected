@@ -372,4 +372,14 @@ public class DatePickerView extends View {
     public void setOnSelectChangeListener(OnSelectChangeListener onSelectChangeListener) {
         mOnSelectChangeListener = onSelectChangeListener;
     }
+
+    /**
+     * 设置是否可以滚动
+     *
+     * @param canScroll
+     */
+    public void setCanScroll(boolean canScroll) {
+        mDatePickerPro.setCanScroll(canScroll);
+    }
+
 }

@@ -139,6 +139,18 @@ public class BottomPopDateSelect extends Dialog {
                 changeListSize(mMonthList, monthLength);//设置一下长度
                 mMonthDatePicker.setDateList(mMonthList);
             }
+
+            int days = DateUtil.getDays(year, monthLength);//根据年月得到天数
+
+            if (mDayList.size() == days) ;//相等啥也不做
+            else {
+                if (days <= mDayDatePicker.getCurrentSelected()) {
+                    mDayDatePicker.setCurrentSelected(days - 1);//选最后一个
+                }
+                changeListSize(mDayList, days);
+                mDayDatePicker.setDateList(mDayList);
+            }
+
         });
 
         mMonthDatePicker.setOnSelectChangeListener((currentSelectIndex) -> {
