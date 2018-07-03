@@ -1,10 +1,10 @@
 演示图片
 --------
-![image](https://github.com/bouquet12138/pictureLibrary/blob/master/dateSelected.gif.gif)
+![image](https://github.com/bouquet12138/pictureLibrary/blob/master/dateSelected.gif)
 <br>
 简单使用
 --------	
-	项目是有三个DatePickerView 组成的 
+	项目是由三个DatePickerView 组成的 
 	为每个DatePickerView设置数据的方法 对象.setDateList(List<String> );
 	<br>
 	
